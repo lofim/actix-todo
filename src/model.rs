@@ -19,7 +19,7 @@ impl str::FromStr for TodoState {
         match s.to_lowercase().as_ref() {
             "open" => Ok(TodoState::Open),
             "closed" => Ok(TodoState::Closed),
-            _ => Err(TodoStateError::ParsingError(format!("{}", s)))
+            _ => Err(TodoStateError::ParsingError(format!("{}", s))),
         }
     }
 }

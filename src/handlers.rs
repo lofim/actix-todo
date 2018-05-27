@@ -1,7 +1,7 @@
 use actix_web::{HttpRequest, HttpResponse, Json, Path, Query, Result};
 
-use std::str::FromStr;
 use model::{Todo, TodoState};
+use std::str::FromStr;
 
 #[derive(Deserialize)]
 pub struct ListParams {
